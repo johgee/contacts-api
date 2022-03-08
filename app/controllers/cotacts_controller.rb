@@ -1,0 +1,2 @@
+class CotactsController < ApplicationController
+end
