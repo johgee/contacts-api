@@ -1,0 +1,51 @@
+### Contacts Index
+GET http://localhost:3000/contacts.json
+Authorization: Bearer 
+
+### Contacts Create
+POST http://localhost:3000/contacts.json 
+Content-Type: application/json 
+
+{
+  "first_name": "test test test",
+  "last_name": "test last",
+  "email": "test@test.com"
+}
+
+### Contacts Show
+GET http://localhost:3000/contacts/1.json 
+
+### Contacts Update
+PATCH http://localhost:3000/contacts/5.json 
+Content-Type:  application/json 
+
+{
+  "first_name": "update name",
+  "last_name": "update last",
+  "email": "update@test.com"
+}
+
+### Contacts Destroy
+DELETE http://localhost:3000/contacts/5.json 
+
+### Users Create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json 
+
+{
+  "first_name": "test test test",
+  "last_name": "test last",
+  "email": "test22224@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+
+  "email": "test1234@test.com",
+  "password": "password"
+}
